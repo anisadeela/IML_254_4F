@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="resource/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Education</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a class="active" href="education.html">Education</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="friends.html">Friends</a></li>
+	    <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="card">
+            <h2>Early Beginnings</h2><br>
+            <div class="images">
+                <img src="resource/image/1.png" alt="Tadika">
+		<img src="resource/image/2.png" alt="Tadika">
+            </div><br>
+            <p>My educational journey began at <strong>Tadika Al-Irfan</strong>, where I spent my formative years from the age of 4 to 6. These early experiences laid the foundation for my love of learning and curiosity about the world.</p>
+        </section>
+        <section class="card">
+            <h2>Primary School Years</h2><br>
+            <div class="images">
+                <img src="resource/image/7.png" alt="SK Sri Jerai">
+		<img src="resource/image/8.png" alt="SK Sri Jerai">
+            </div><br>
+            <p>From there, I moved on to <strong>Sekolah Kebangsaan Sri Jerai</strong>, where I studied from the age of 7 to 12. These years were filled with discovery and growth, as I developed a strong academic foundation and a passion for various subjects.</p>
+        </section>
+        <section class="card">
+            <h2>Secondary School Journey</h2><br>
+            <div class="images">
+                <img src="resource/image/5.png" alt="MMMK">
+		<img src="resource/image/6.png" alt="MMMK">
+            </div><br>
+            <p>At the age of 13, I embarked on the next chapter of my education at <strong>Maktab Mahmud Merbok</strong>. For 5 years, from 13 to 17, I honed my knowledge and skills in a rigorous and supportive environment, preparing myself for future academic challenges.</p>
+        </section>
+        <section class="card">
+            <h2>Current Pursuits</h2><br>
+            <div class="images">
+                <img src="resource/image/3.png" alt="UiTM">
+		<img src="resource/image/4.png" alt="UiTM">
+            </div><br>
+            <p>Currently, I am continuing my studies at <strong>Universiti Teknologi Mara (UiTM), Kedah Branch</strong>, where I am pursuing a <strong><em>Diploma in Library Informatics</strong></em>. This program is a perfect fit for my interests and career aspirations, as it combines my love for information, organization, and helping others access knowledge.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© Copyright NURUL ANIS ADEELA 2024</p>
+        <!-- Scroll to top button -->
+        <button class="scroll-to-top" onclick="scrollToTop()"><img src="resource/icon/arrow.png" alt="Top arrow"></button>
+    </footer>
+
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show scroll-to-top button when scrolling down
+        window.onscroll = function() {
+            var scrollButton = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

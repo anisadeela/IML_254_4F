@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="resource/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to My Homepage</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Homepage</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="card">
+            <h2>Welcome to My World!</h2>
+            <br><br>
+            <div class="marquee-container">
+                <div class="marquee">
+                    Explore more about me, here we go!!!
+                </div>
+            </div>
+            <div class="video-container">
+                <video loop autoplay muted>
+                    <source src="resource/video/life.mp4" type="video/mp4">
+                </video>
+            </div>
+<center>
+            <audio controls>
+                <source src="resource/audio/life.mp3" type="audio/mp3">
+            </audio>
+</center><br>
+
+        </section>
+
+	        <div class="pair-container">
+
+            <section class="cardss">
+                <div class="cardss-inner">
+                    <div class="cardss-front">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="cardss-back">
+            <p>Hi there! I'm <strong>Nurul Anis Adeela Binti Rosele</strong>, but you can call me <strong>Anis</strong>. Born on April 27, 2004, under the bright lights of Hospital Selayang, Selangor, I've journeyed through 20 vibrant years of life. Now, I find my home in the serene surroundings of Taman Perumahan Perwaja, nestled in Gurun, Kedah.</p>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="cardss">
+                <div class="cardss-inner">
+                    <div class="cardss-front">
+            <h2>Education</h2>
+</div>
+<div class="cardss-back">
+
+            <p>Currently, I am continuing my studies at <strong>Universiti Teknologi Mara (UiTM), Kedah Branch</strong>, where I am pursuing a <em><strong>Diploma in Library Informatics</em></strong>. This program is a perfect fit for my interests and career aspirations, as it combines my love for information, organization, and helping others access knowledge.</p>
+</div></div>
+        </section></div>
+
+
+
+	<div class="pair-container">
+        <section class="cardss">
+                <div class="cardss-inner">
+                    <div class="cardss-front">           
+		 <h2>Hobby</h2>
+		</div>
+	<div class="cardss-back">
+            <p>I have a deep love for movies, especially those in the animation and fantasy genres. Films like "Encanto" and "Coco" hold a special place in my heart with their captivating stories and vibrant visuals. I also enjoy watching YouTube for entertainment and relaxation, reading quote books and comics, and playing mobile games.</p>
+</div></div>
+        </section>
+
+
+        <section class="cardss">
+                <div class="cardss-inner">
+                    <div class="cardss-front">           
+            <h2>Family</h2>
+</div>
+	<div class="cardss-back">
+            <p>Family is the cornerstone of my life, and I am blessed to have a close-knit and supportive family of seven. Our family is built on love, respect, and mutual support. Each family member holds a special place in my heart, and our bond grows stronger every day.</p>
+</div></div>
+        </section></div>
+
+
+	<div class="pair-container">
+        <section class="cardss">
+                <div class="cardss-inner">
+                    <div class="cardss-front">   
+            <h2>Friends</h2>
+</div>
+	<div class="cardss-back">
+            <p>Friendships have played a significant role in shaping my experiences and providing endless support and joy. From my earliest days in school to my current university life, my friends have been my confidants, cheerleaders, and partners in adventure.</p>
+</div></div>
+        </section>
+
+        <section class="cardss">
+                <div class="cardss-inner">
+                    <div class="cardss-front"> 
+            <h2>Contact</h2>
+</div>
+<div class="cardss-back">
+            <p>Feel free to reach out—I'm always up for a good chat or a collaborative project. You can contact me via <a class="email-link" href="mailto:nurulanisadeela@gmail.com">Email</a> or follow me on <a class="instagram-link" href="https://www.instagram.com/deellrssee/" target="_blank">Instagram</a>.</p>
+</div></div>
+        </section></div>
+    </main>
+
+    <footer class="footer">
+        <p>© Copyright NURUL ANIS ADEELA 2024</p>
+        <!-- Scroll to top button -->
+        <button class="scroll-to-top" onclick="scrollToTop()"><img src="resource/icon/arrow.png" alt="Top arrow"></button>
+    </footer>
+
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show scroll-to-top button when scrolling down
+        window.onscroll = function() {
+            var scrollButton = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+ };
+
+        // Flip card functionality
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('flip');
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+    <link rel="stylesheet" href="resource/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Hobby</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a class="active" href="hobby.html">Hobby</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="friends.html">Friends</a></li>
+	    <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="card">
+            <h2>Movie Enthusiast</h2><br>
+		<div class="images">
+		<img src="resource/image/encanto.png" alt="Encanto">
+		<img src="resource/image/coco.png" alt="Coco">
+		</div><br>
+            <p>I have a deep love for movies, especially those in the animation and fantasy genres. Films like "Encanto" and "Coco" hold a special place in my heart with their captivating stories and vibrant visuals. These movies allow me to escape into fantastical worlds and experience a wide range of emotions.</p>
+        </section>
+        <section class="card">
+            <h2>YouTube Enthusiast</h2><br>
+		<div class="images">
+		<img src="resource/image/ytb.png" alt="Youtube">
+		</div><br>
+            <p>YouTube is my go-to platform for entertainment and relaxation. I enjoy watching a variety of content, from informative videos to entertaining clips, especially during meals. It's also my favorite source for music when I need a background soundtrack while working.</p>
+        </section>
+        <section class="card">
+            <h2>Book Lover</h2><br>
+		<div class="images">
+		<img src="resource/image/book.png" alt="Book">
+		</div><br>
+            <p>Books are a constant companion in my life. I particularly enjoy reading quote books and comics. The wisdom and creativity found in these pages offer me both inspiration and a delightful escape from the everyday routine.</p>
+        </section>
+        <section class="card">
+            <h2>Mobile Gamer</h2><br>
+		<div class="images">
+		<img src="resource/image/game.png" alt="Game">
+		</div><br>
+            <p>In my free time, I like to unwind by playing mobile games. It's a fun way to relax and challenge myself with different games right on my phone. Whether it's a quick game during a break or a longer session, mobile gaming adds a bit of excitement to my day.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© Copyright NURUL ANIS ADEELA 2024</p>
+        <!-- Scroll to top button -->
+        <button class="scroll-to-top" onclick="scrollToTop()"><img src="resource/icon/arrow.png" alt="Top arrow"></button>
+    </footer>
+
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show scroll-to-top button when scrolling down
+        window.onscroll = function() {
+            var scrollButton = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

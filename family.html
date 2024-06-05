@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family</title>
+    <link rel="stylesheet" href="resource/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Family</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a class="active" href="family.html">Family</a></li>
+            <li><a href="friends.html">Friends</a></li>
+	    <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="card">
+            <h2>My Loving Family</h2><br>
+
+	<div class="video-container">
+	<video loop autoplay muted>
+		<source src="resource/video/family.mp4" type="video/mp4">
+	</video>
+	</div>
+	<center>
+	<audio controls>
+	<source src="resource/audio/family.mp3" type="audio/mp3">
+	</audio>
+	</center><br><br>
+
+            <div class="images">
+                <img src="resource/image/fam.png" alt="Family">
+            </div><br>
+	
+            <p>Family is the cornerstone of my life, and I am blessed to have a close-knit and supportive family of seven. Here’s a little bit about each of them:</p>
+		<br><br>
+            <h3>My Parents:</h3>
+            <div class="images">
+                <img src="resource/image/umiabah.png" alt="Parents">
+            </div>
+		<br>
+            <p>My parents are the heart and soul of our family. Their love, guidance, and hard work have shaped who I am today. They have always been there for us, providing a strong foundation and a nurturing environment.</p>
+
+		<br><br>
+            <h3>My Siblings:</h3>
+            <div class="siblings">
+
+            <div class="images">
+                <img src="resource/image/abg.png" alt="Azeem">
+            </div>
+<br>
+                <p><strong>Eldest Brother:</strong> Muhammad Nur Azeem Bin Rosele, my elder brother, has always served as a guardian and role model. I greatly respect his strength and insight.</p>
+<br>
+            <div class="images">
+                <img src="resource/image/anis.png" alt="Anis">
+            </div>
+<br>
+                <p><strong>Elder Sister:</strong> Our family is always brightened and made more creative by my sister, Nurul Anis Adelena Binti Rosele. Her positive outlook on life and helpful demeanor are very motivating.</p>
+<br>
+            <div class="images">
+                <img src="resource/image/me.png" alt="Adeela">
+            </div>
+<br>
+                <p><strong>Me:</strong> I am the third child in the family, Nurul Anis Adeela Binti Rosele. I'm in the middle, so I get to learn from my older siblings and mentor my younger brothers, which is a special experience.</p>
+<br>
+            <div class="images">
+                <img src="resource/image/ajib.png" alt="Azeef">
+                <img src="resource/image/gg.png" alt="Azeze">
+            </div>
+<br>
+                <p><strong>Younger Brothers:</strong> Our family is energized by the lively energy of my two younger brothers. Muhammad Nur Azeef Bin Rosele, my first younger brother, is on the left, and Muhammad Nur Azeze Bin Rosele, my last younger brother, is on the right. Our everyday lives are made more enjoyable by their lively personalities and inquisitive intellect, which keep us all alert.</p><br>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Our Bond</h2>
+            <p>Our family is built on a foundation of love, respect, and mutual support. We enjoy spending time together, whether it's sharing meals, celebrating special occasions, or simply enjoying each other's company. Each member of my family holds a special place in my heart, and our bond grows stronger with every passing day.</p>
+            <p>Thank you for taking the time to learn about my family. They are my greatest source of strength and inspiration.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© Copyright NURUL ANIS ADEELA 2024</p>
+        <!-- Scroll to top button -->
+        <button class="scroll-to-top" onclick="scrollToTop()"><img src="resource/icon/arrow.png" alt="Top arrow"></button>
+    </footer>
+
+    <script>
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show scroll-to-top button when scrolling down
+        window.onscroll = function() {
+            var scrollButton = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

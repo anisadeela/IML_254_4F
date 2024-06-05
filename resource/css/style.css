@@ -1,0 +1,343 @@
+body {
+    font-family:'Cooper Black';
+    margin: 0;
+    padding: 0;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 29%, rgba(148,187,233,1) 100%);
+    color: #333;/* color for p li strong */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #7e57c2;
+    color: #fff;/* font */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #5e35b1;/* line color */
+}
+
+.header h1 {
+    font-family: 'Showcard Gothic', cursive, sans-serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+nav {
+    background-color: #9575cd;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 5px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a:hover:not(.active) {
+    background-color: #7e57c2;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a.active {
+    background-color: #b39ddb;
+}
+
+/* email and Instagram links */
+.email-link, .instagram-link {
+    text-decoration: none;
+    color: blue; /* color */
+}
+
+.email-link:hover, .instagram-link:hover {
+    color: red; /* color hover */
+}
+
+.main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    flex: 1;
+    margin-top: 20px;
+}
+
+.main h2 {
+    color: #7e57c2;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #b39ddb;
+    padding-bottom: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+}
+
+.main h3 {
+    color: #7e57c2;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.main p, .main li, .main strong {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.images img {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    width: auto;
+    height: 350px; 
+    margin-right: 10px; 
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+.video-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+.contact {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact h2 {
+    color: #7e57c2;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.contact button[type="submit"] {
+    background-color: #7e57c2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #38225e;
+}
+
+.contact-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-icons a img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #7e57c2;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 5px solid #5e35b1;
+    position: relative;
+}
+
+.scroll-to-top {
+    background-color: #9575cd;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.scroll-to-top img {
+    width: 40px;
+    height: 40px;
+}
+
+.scroll-to-top:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.marquee-container {
+    width: 100%;
+    text-align: left;
+}
+
+.marquee {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bcd4e6 ;
+    color: #e18e96;/* font */
+    border-radius: 20px;
+    font-size: 1.2rem;
+    animation: marqueeAnimation 10s linear infinite alternate;
+}
+
+/* Keyframe Animation for Marquee */
+@keyframes marqueeAnimation {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+.card {
+    background-color: #e6e8fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pair-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pair-container .card {
+    flex: 1;
+    min-width: 300px; 
+}
+
+
+/* flip card */
+
+.pair-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    perspective: 1000px; /* perspective for the 3D effect */
+}
+
+/* card for homepage under the video */
+.cardss {
+    background-color: #e6e8fa;	
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+    width: 350px;
+    height: 300px;
+    cursor: pointer;
+    perspective: 1000px;
+
+}
+
+.cardss-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.cardss-front, .cardss-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.cardss-front {
+    background-color: #f4bbff;
+}
+
+.cardss-back {
+    background-color: #f4bbff;
+    transform: rotateY(180deg);
+}
+
+.cardss:hover .cardss-inner {
+    transform: rotateY(180deg);
+}
